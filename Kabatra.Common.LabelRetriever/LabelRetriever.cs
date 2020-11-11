@@ -1,6 +1,7 @@
 ﻿namespace Kabatra.Common.LabelRetriever
 {
     using Cultures;
+    using Kabatra.Common.LabelRetriever.Properties;
     using System.Diagnostics.CodeAnalysis;
     using System.Globalization;
     using System.Threading;
@@ -15,6 +16,12 @@
     {
         private static LabelRetriever _retriever;
         private static readonly object ThreadSafeLock = new object();
+
+        #region Application labels
+        public string ApplicationStart => Labels.ApplicationStart;
+        public string GameStart => Labels.GameStart;
+        public string GameOver => Labels.GameOver;
+        #endregion
 
         /// <summary>
         ///     Returns a singleton instance of <c>LabelRetriever</c>.
