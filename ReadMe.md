@@ -1,5 +1,5 @@
 # Label Retriever
-Have you ever ask yourself how to easily introduce support for translation during the development cycle? I have, obviously, and I decided that I should make a stand-alone solution for it.
+Have you ever asked yourself how to easily introduce support for translation during the development cycle? I have, obviously, and I decided that I should make a stand-alone solution for it.
 
 ## Background
 In previous Kata, exercises, I have relied on hard coded strings for communication to the user, this works for smaller projects but I wanted to have a look at how I could support something far more complicated in the future. Enter the resource file. Using a business layer I can create resource files that contain my labels, I can also specify which language these labels are supporting. Once you build the project containing the resource file a designer file is automatically generated.
