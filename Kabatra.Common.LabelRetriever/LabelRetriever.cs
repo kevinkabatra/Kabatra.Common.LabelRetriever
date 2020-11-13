@@ -63,7 +63,7 @@
         /// </summary>
         /// <param name="language">The language that will be used for translation purposes.</param>
         /// <remarks>If language is left null, will default to English United States.</remarks>
-        private LabelRetriever(Languages language)
+        protected internal LabelRetriever(Languages language)
         {
             var languageValue = (language ?? Languages.EnglishUnitedStates).Value;
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageValue);
